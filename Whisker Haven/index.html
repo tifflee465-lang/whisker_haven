@@ -1,0 +1,137 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Whisker Haven</title> 
+    <style>
+       /* Reset */ * 
+       { margin: 0; 
+        padding: 0; 
+        box-sizing: border-box; 
+        font-family: 'Arial', sans-serif; 
+        background-color: #FFF8F3; 
+      } body 
+      { color: #3a2b2b; 
+      } /* Header */ header 
+      { display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 15px 20px; 
+        background-color:#F6C1C1; 
+        position: relative; 
+      } header h1 
+      { font-weight: bold; 
+        font-size: 1.2rem; 
+        color: #3a2b2b; 
+      } .menu-btn 
+      { font-size: 1.5rem; 
+        cursor: pointer; 
+        border: none; 
+        background: none; 
+      } /* Overlay menu */ 
+      .overlay 
+      { height: 100%; 
+        width: 0; 
+        position: fixed; 
+        top: 0; 
+        right: 0; 
+        background-color: #FFF8F3; 
+        overflow-x: hidden; 
+        transition: 0.3s; 
+        z-index: 999; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+      } .overlay a 
+      { padding: 15px; 
+        font-size: 1.2rem; 
+        color: #3a2b2b; 
+        text-decoration: none; 
+        transition: 0.3s; 
+      } .overlay a:hover
+       { color: #f28b5d;
+       } .overlay .close-btn 
+       { position: absolute; 
+        top: 20px; right: 20px; 
+        font-size: 1.5rem; 
+        cursor: pointer; 
+      } /* Hero Section */ 
+      .hero { 
+        text-align: center; 
+        padding: 50px 20px 20px 20px; 
+      } .hero h2 
+      { font-size: 1.5rem; 
+        margin-bottom: 10px; }
+         .hero h2 span {
+           font-family: 'Georgia', serif; 
+           font-weight: bold; 
+           color: #3a2b2b; 
+          } .hero p { 
+            font-size: 0.9rem; 
+            margin-bottom: 20px; 
+            color: #3a2b2b; 
+          } .hero button { 
+            padding: 10px 20px; 
+            background-color: #f28b5d; 
+            border: none; 
+            border-radius: 5px; 
+            color:#F6C1C1 
+            font-weight: bold; 
+            cursor: pointer; } 
+            /* Card */ .card {
+               max-width: 300px; 
+               margin: 20px auto; 
+               border-radius: 10px; 
+               overflow: hidden; 
+               box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+               background:#FFF8F3; } 
+               .card img { width: 100%; display: block; } 
+               .card p { 
+                text-align: center; 
+                font-size: 0.75rem; 
+                margin: 10px; color: #3a2b2b; } 
+                /* Footer */ 
+                footer {
+                   text-align: center; 
+                   font-size: 0.7rem; 
+                   color: #3a2b2b; 
+                   margin: 20px 0; } 
+                  </style> 
+                </head> 
+                <body> 
+                  <header> 
+                    <h1> 
+                      <img src="logo.svg" alt="Whisker Haven Logo" style="height:20px;"> 
+                    </h1> 
+                    <button class="menu-btn" onclick="openMenu()">☰</button> 
+                  </header> 
+                  <!-- Overlay Menu --> 
+                   <div id="myNav" class="overlay"> 
+                    <span class="close-btn" onclick="closeMenu()">×</span> 
+                    <a href="#">Home</a>
+                     <a href="#">About</a> 
+                     <a href="#">Gallery</a> 
+                     <a href="#">Contact</a> 
+                    </div> 
+                    <section class="hero"> 
+                      <br><h2>Your cat deserves <br><br> 
+                        <img src="logo.svg" alt="Whisker Haven" style="height:50px;"> 
+                      </h2> 
+                      <p>...for the cats that inspire art – crafted with love and creativity.</p> 
+                      <button>Adopt the Art</button> 
+                    </section> <div class="card"> 
+                      <img src="my_drawing.svg" alt="Cat Sketch"> 
+                      <p>*Ballpoint pen sketch — Whisker Haven’s featured pet</p> 
+                    </div> 
+                    <footer>
+                       ©2025 Whisker Haven | Designed by Tiffany Lee 
+                      </footer> 
+                      <script> 
+                        function openMenu() {
+                           document.getElementById("myNav").style.width = "45%"; }
+                            function closeMenu() {
+                               document.getElementById("myNav").style.width = "0"; }
+                               </script>
+                               </body> 
+                               </html>
